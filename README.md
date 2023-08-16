@@ -1,12 +1,22 @@
-# Spell-checker
-this code has been written for desire dictionary and Persian words.
->
-first of all, you need to input your text. the input of this code needs to be char.
-we use Parsivar spell checker for this code. the reason for the usage of this repository is that to detect your default text wrong spelling.
+# Persian Spell Checker
 
+This repository contains a Persian spell checker implemented in Python using the Parsivar library. The spell checker aims to correct misspelled Persian words and improve the accuracy of text by suggesting corrections for words with possible typos.
 
-you can use this code by following steps
+## How to Use
 
-1- input your text in input_datas().
+Follow these steps to use the Persian spell checker:
 
-2- use spell_checker() and put your sentences to get correct dictation
+1. **Input Your Text**: Modify the `input_datas(text)` function to provide your input text as a string. This function will organize the text into a dictionary format for further correction.
+
+2. **Create the Dictionary**: The code automatically converts the input text into a dictionary based on the initial characters of words. This dictionary helps improve the efficiency of finding corrections for misspelled words.
+
+3. **Run the Spell Checker**: Use the `spell_checker(text)` function to perform spell checking on the input text. The function uses the created dictionary to suggest corrections for misspelled words and returns the corrected version of the text.
+
+4. **View Corrections**: The corrected text will be displayed as output, showing the suggested corrections for misspelled words.
+
+```python
+# Example Usage
+
+input_text = "این یک تست است که اشتباه‌های املایی را تصحیح می‌کند."
+corrected_text = spell_checker(input_text)
+print(corrected_text)
